@@ -1,4 +1,3 @@
-import path from 'path';
 import { platform } from 'os';
 
 const VOLUME = /^([A-Z]:)/i;
@@ -57,7 +56,7 @@ function normalizeId(id) {
   return id;
 }
 
-export default function aliasExternal(moduleName, inputEntries) {
+export function aliasExternal(moduleName, inputEntries) {
   const entries = getEntries(inputEntries);
 
   if (entries.length === 0) {

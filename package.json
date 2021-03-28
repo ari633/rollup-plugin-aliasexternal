@@ -2,8 +2,11 @@
   "name": "rollup-plugin-aliasexternal",
   "version": "1.0.0",
   "description": "Define alias inside node_module when bundling package with Rollup",
-  "main": "src/index.js",
+  "main": "dist/rollup-plugin-aliasexternal.js",
+  "module": "dist/rollup-plugin-aliasexternal.mjs",
   "scripts": {
+    "build": "rollup -c",
+    "prepare": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/ari633/rollup-plugin-aliasexternal/issues"
   },
-  "homepage": "https://github.com/ari633/rollup-plugin-aliasexternal#readme"
+  "homepage": "https://github.com/ari633/rollup-plugin-aliasexternal#readme",
+  "devDependencies": {
+    "rollup": "^2.43.1"
+  }
 }

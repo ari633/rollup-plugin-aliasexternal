@@ -6,9 +6,13 @@ the main focus this module is to resolve alias inside node_module when bundling 
 
 # Usage
 
+```shell
+npm i -D rollup-plugin-aliasexternal
+```
+
 ```javascript
 // rollup.config.js
-import aliasExternal from 'rollup-plugin-aliasexternal';
+import { aliasExternal } from 'rollup-plugin-aliasexternal';
 
 export default {
   input: './src/index.js',
